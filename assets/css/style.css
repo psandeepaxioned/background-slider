@@ -100,31 +100,37 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
-ul {
-  position: relative;
-  display: flex;
-  flex: direction;
-  flex-direction: column;
-  margin-top: 83px;
+/*=================================
+  Header styling ends here
+=================================*/  
+
+/*=================================
+  main styling starts here
+=================================*/
+
+img {
+  height: 100vh;
 }
-li.active {
-  display: block;
+ul {
+  display: flex;
+  flex-direction: column;
 }
 .slide {
   display: none;
-  width: 84%;
-  margin: 0 auto;
+}
+.active {
+  display: block;
 }
 .left {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 10%;
   transform: translateY(-50%);
 }
 .left a {
@@ -143,7 +149,7 @@ li.active {
 .right {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 10%;
   transform: translateY(-50%);
 }
 .right a {
@@ -158,20 +164,7 @@ li.active {
   text-indent: 0;
   float: right;
   color: #000;
-}
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
-
-/*=================================
-  main styling starts here
-=================================*/
-
+} 
 
 
 
