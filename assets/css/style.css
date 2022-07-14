@@ -120,7 +120,21 @@ li {
 .slider-container li:nth-child(5){  background-image: url('../images/5.jpg'); }
 .slider-container li:nth-child(6){  background-image: url('../images/6.jpg'); }
 
-
+.overlay{
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  inset: 0;
+}
+.difference{
+  width: 70vw;
+  height: 70vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgba(255,255,255,0.7);
+  mix-blend-mode: difference;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -132,6 +146,7 @@ body {
   background-position: center center;
   background-size: cover;
   transition: 0.4s;
+  position: relative;
 }
 
 body::before{
@@ -204,78 +219,6 @@ body::before{
   float: right;
   color: #000;
 } 
-/* img {
-  height: 100vh;
-}
-ul {
-  display: flex;
-  flex-direction: column;
-}
-.slide {
-  display: none;
-}
-.active {
-  display: block;
-}
-.left {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translateY(-50%);
-}
-.left a {
-  text-indent: -9999px;
-  padding: 25px;
-  border: 3px solid #f7a504;
-}
-.left a::before {
-  content: '\f060'; 
-  font-family: "fontAwesome";
-  font-size: 25px;
-  text-indent: 0;
-  float: right;
-  color: #000;
-}
-.right {
-  position: absolute;
-  top: 50%;
-  right: 10%;
-  transform: translateY(-50%);
-}
-.right a {
-  text-indent: -9999px;
-  padding: 25px;
-  border: 3px solid #f7a504;
-}
-.right a::before {
-  content: '\f061'; 
-  font-family: "fontAwesome";
-  font-size: 25px;
-  text-indent: 0;
-  float: right;
-  color: #000;
-} 
-/* .overlay {
-  width: 70vw;
-  height: 70vh;
-  background-color: rgba(0,0,0,0);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-/* li.slide.active::before {
-  content: '';
-  background-color: #0000008f;
-  width: 100%;
-  position: absolute;
-  height: 100%;
-} */ 
-
-
-
-
-
 
 /*=================================
   main styling ends here
